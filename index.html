@@ -1,0 +1,124 @@
+<html>
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--Import materialize.css + css perso -->
+        <link type="text/css" rel="stylesheet" href="styles/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="styles/css/style.css"  media="screen"/>
+        <!--Import jquery 2.1.1 + materialize.js + ajax -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="styles/js/materialize.min.js"></script>
+        <script type="text/javascript" src="styles/js/ajax.js"></script>
+        <script type="text/javascript" src="styles/js/Ajax_getAllVideo.js"></script>
+        <script>
+            $(document).ready(getBoutique());
+        </script>
+        <link rel="icon" type="image/jpg" href="images/logo.png"/>
+        <title>  VIDEO STORE </title>
+    </head>
+
+  	<body>
+		<header class="cyan darken-2">
+			<div class="container"></br></br></div>
+			<nav class="cyan darken-2">
+				<div class="container">
+					<div class="nav-wrapper">
+						<a href="accueil.html" class="brand-logo"><i id="boutique"></i></a>
+					</div>
+				</div>
+			</nav></br>
+		</header></br>
+
+
+		<main>
+			<div class="container">
+				<div class="row">
+					<form class="col s8 offset-s2">
+						<div class="row">
+							<div class="input-field col s6">
+								<i class="mdi-action-account-circle prefix"></i>
+								<input id="first_name" type="text" class="validate">
+								<label for="first_name">First Name</label>
+							</div>
+							<div class="input-field col s6">
+								<i class="mdi-action-account-circle prefix"></i>
+								<input id="last_name" type="text" class="validate">
+								<label for="last_name">Last Name</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="mdi-action-perm-contact-cal prefix"></i>
+								<input id="date" type="date" class="datepicker">
+								<label for="date">Date</label>
+							</div>
+						</div>
+						<script> 
+							$('.datepicker').pickadate({
+	    						selectMonths: true, // Creates a dropdown to control month
+	    						selectYears: 15 // Creates a dropdown of 15 years to control year
+	 						}); 
+	 					</script>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="mdi-communication-email prefix"></i>
+								<input id="email" type="email" class="validate">
+								<label for="email">Email</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="mdi-action-lock prefix"></i>
+								<input id="password" type="password" class="validate">
+								<label for="password">Password</label>
+							</div>
+						</div>
+						<button class="btn waves-effect waves-light" type="submit" name="action">
+							Submit
+	    					<i class="mdi-content-send right"></i>
+	  					</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+
+		<footer class="page-footer footer cyan darken-2">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col l5 s12">
+	                    <h5 class="grey-text text-lighten-4">Mentions légales</h5>
+	                    <p class="grey-text text-lighten-2">
+	                        Toute les vidéos sont soumis à des droits d'auteurs.</br>
+	                        Il est interdit de faire usage de ces vidéos dans un but commercial.</br>
+	                        Par ailleurs nos services sont complètement légales et respèctent les lois du 11 mars 1957 et du 3 juillet 1985, codifiées dans le code de la propriété intellectuelle.</br>
+	                    </p>
+	                </div>
+	                <div class="col l4 s12">
+	                    <h5 class="grey-text text-lighten-4">Contactez-Nous !</h5>
+	                    <p class="grey-text text-lighten-2">
+	                        Vous ne trouvez pas le film que vous cherchez ?</br>
+	                        Une vidéo est de mauvaise qualité ?<br>
+	                        Des question sur la société ?</br>
+	                        Envoyez nous un mail : VideoStore@y-nov.com !
+	                    </p>
+	                </div>
+	                <div class="col l3 s12">
+	                    <h5 class="grey-text text-lighten-4">Suivez-Nous !</h5>
+	                    <ul>
+	                        <li><a class="grey-text text-lighten-2" href="#!"><u>Page Facebook</u></a></li>
+	                        <li><a class="grey-text text-lighten-2" href="#!"><u>Page Twitter</u></a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="footer-copyright">
+	            <div class="container">
+	                © 2014-2015 VideoStore, All rights reserved.
+	                <a class="grey-text text-lighten-4 right" href="#!">33300 Bordeaux, 75 quai des Chartrons</a>
+	            </div>
+	        </div>
+	    </footer>
+    </body>
+</html>

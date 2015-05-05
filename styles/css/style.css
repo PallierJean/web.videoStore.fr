@@ -1,0 +1,35 @@
+/* Si besoin pour coller le footer au fond de la page */
+.footer2 {
+	position:absolute;
+	bottom:0;
+	width: 100%;
+}
+
+/*dans la page video */
+#reservation {
+	margin-top:15px;
+}
+
+#fleche {
+	margin-top:-10px;
+}
+
+/* Volé à Bootstrap pour la mise en forme du tableau */
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+}
+
+.panel-heading {
+	padding: 10px 15px;
+}
+
+.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #337ab7;
+}
+
+th {
+	border-radius: 0;
+}
