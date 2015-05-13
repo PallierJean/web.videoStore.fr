@@ -6,13 +6,13 @@
         <link type="text/css" rel="stylesheet" href="styles/css/style.css"  media="screen"/>
         <!--Import jquery 2.1.1 + materialize.js + ajax -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="styles/js/materialize.min.js"></script>
         <script type="text/javascript" src="styles/js/ajax.js"></script>
         <script type="text/javascript" src="styles/js/Ajax_getAllVideo.js"></script>
         <script>
             $(document).ready(getBoutique());
             $(document).ready(getAllVideo());
         </script>
+        <script type="text/javascript" src="styles/js/materialize.min.js"></script>
         <link rel="icon" type="image/jpg" href="images/logo.png"/>
         <title>  VIDEOS </title>
     </head>
@@ -39,12 +39,10 @@
 
       <main>
         <div class="container">
-            <h2 class="header deep-orange-text text-accent-4">Videos disponibles :</h2>
+            <h2 class="header cyan-text text-darken-3 text-accent-4">Videos disponibles :</h2>
 
-            <div class="row">
-              <ul id="ArrayVideo" class="collapsible collection"> </ul>
-            </div>
-
+            <ul id="ArrayVideo" class="collapsible collection" data-collapsible="accordion"></ul>
+            
             <ul class="collapsible collection" data-collapsible="accordion">
                 <li>
                   <div class="collapsible-header collection-item avatar">

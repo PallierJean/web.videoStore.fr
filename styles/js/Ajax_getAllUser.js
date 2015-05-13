@@ -15,7 +15,7 @@ function getAllUser() {
                 id.innerHTML += data[i].id;
                 
                 var pseudo = ligne.insertCell(1);
-                pseudo.innerHTML += data[i].pseudo;
+                pseudo.innerHTML += data[i].mail;
 
                 var tiret = ligne.insertCell(2);
                 tiret.innerHTML += " - ";
